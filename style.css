@@ -1,0 +1,41 @@
+.done{
+	text-decoration: line-through;
+}
+
+h1, input, label, button{
+	font-family: 'Dosis', sans-serif;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
+}
+form{
+	background-color: #35495e;
+	padding: 1em;
+}
+
+form input {
+	padding: 0.5em;
+}
+
+button{
+	padding: 0.7em;
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+ul{
+	background-color: #41b883;
+	padding: 1em;
+	list-style: none;
+}
+
+ul li button {
+	padding: 0.3em;
+}
