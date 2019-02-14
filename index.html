@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<title>ToDo List avec Vue.js</title>
@@ -8,17 +8,23 @@
 </head>
 <body>
 	
+	<div id="app">
+		<h1>{{title}}</h1>
+		<form @submit.prevent="addTask">
+			<input v-model='newTask' type="text" name="task" placeholder="votre tâche">
+			<button type="submit">Ajouter</button>
+		</form>
+		<ul>
+			<li v-for="task in tasks">
+				<input v-model="task.done" :name="task.title" :id="task.title" type="checkbox">
+				<label :class="{done: task.done}" :for="task.title">{{task.title}}</label>
+				<button @click="removeTask(task)" type="button">X</button>
+			</li>
+		</ul>
+	</div>
+
 	<!-- script -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="app.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
-
-<!-- <form>
-	<input type="text" name="task" placeholder="votre tâche">
-	<button type="submit">Ajouter</button>
-</form> -->
-
-<!-- <input type="checkbox">
-<label>{{task.title}}</label>
-<button type="button">X</button> -->
