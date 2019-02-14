@@ -28,7 +28,7 @@ $ npm install vue
 
 ### Démarrer l'application
 
-La première chose à faire, est de construire notre fichier html avec le script et de créer une instance de Vue pour notre application.
+La première chose à faire est de construire notre fichier html avec le script et de créer une instance de Vue pour notre application.
 
 ```html
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ const app = new Vue({
 });
 ```
 
-On lui dit ou rendre Vue grace à l'id app.
+On lui dit où rendre Vue grâce à l'id app.
 
 ### Jouer avec les data
 
@@ -93,7 +93,7 @@ const app = new Vue({
 
 ### Gérer les évènements
 
-Grace à Vue.js, on peut appeler directements des méthodes lors du clique d'un bouton ou d'une soumission de formulaire.
+Grace à Vue.js, on peut appeler directement des méthodes lors du clique d'un bouton ou d'une soumission de formulaire.
 
 ```html
 <!DOCTYPE html>
@@ -120,7 +120,7 @@ Grace à Vue.js, on peut appeler directements des méthodes lors du clique d'un 
 </html>
 ```
 
-Le formulaire créer appelle au Submit `@submit`, une méthode appelée **addTask** que nous allons créer juste après. le `.prevent` permet au formulaire de ne pas adopter son comportement par défaut et donc ne pas recharger la page.
+Le formulaire créé appelle au Submit `@submit`, une méthode nommée **addTask** que nous allons créer juste après. le `.prevent` permet au formulaire de ne pas adopter son comportement par défaut et donc ne pas recharger la page.
 
 ### Créer une méthode
 
@@ -225,7 +225,7 @@ Nous allons améliorer l'affichage de nos tâches en ajoutant une checkbox qui p
 
 **:name, :id, :for**
 
-On utilise les `:` pour pouvoir rendre les attributs dynamique avec du javascript.
+On utilise les `:` pour pouvoir rendre les attributs dynamiques avec du javascript.
 c'est le raccourci de : `v-bind`
 
 **v-model**
